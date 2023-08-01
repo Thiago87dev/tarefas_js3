@@ -36,7 +36,7 @@ function retornaPrecoProduto(code) {
 
 // Retorna a categoria do produto com base no tipo de produto
 function retornaCategoriaProduto(type) {
-    switch (code) {
+    switch (type) {
         case 'Eletrônicos':
             return 'Tecnologia'
         case 'Roupas':

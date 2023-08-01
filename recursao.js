@@ -11,11 +11,11 @@ function ehPar(number) {
   return number % 2 === 0 
 }
 
-//OBS: Confesso que nesse exercício eu me baseei em um algoritmo que colocaram no discord
 function fibonacci(n) {
-  if(n === 1) return [0,1]
-  let resultado = fibonacci(n - 1)
-  resultado.push(resultado[resultado.length - 1] + resultado[resultado.length - 2])
+  if (n <= 0) return 0
+  if (n === 1) return 1
+
+  let resultado = fibonacci(n - 1) + fibonacci(n - 2)
   return resultado
 }
 
